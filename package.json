@@ -1,0 +1,41 @@
+{
+  "name": "projet-cuisine-facile",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "engines": {
+    "node": "14.x"
+  },
+  "scripts": {
+    "test": "mocha",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/O-clock-Nemo/projet-cuisine-facile.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/O-clock-Nemo/projet-cuisine-facile/issues"
+  },
+  "homepage": "https://github.com/O-clock-Nemo/projet-cuisine-facile#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "chai": "^4.3.4",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "dayjs": "^1.10.4",
+    "dotenv": "^8.2.0",
+    "email-validator": "^2.0.4",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "express-swagger-generator": "^1.1.17",
+    "joi": "^17.4.0",
+    "mocha": "^8.3.2",
+    "pg": "^8.5.1"
+  }
+}
