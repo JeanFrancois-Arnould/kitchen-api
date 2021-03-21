@@ -37,4 +37,4 @@ in the terminal: `npm start`
 
 ### Swagger Documentation
 
-`http://localhost:3000/api-docs`# cuisine-api
+`http://localhost:3000/api-docs`
