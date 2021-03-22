@@ -67,6 +67,7 @@ router.get('/user', userController.findAll);
  * find one users
  * @route GET /user/{id}
  * @group user
+ * @param {number} id.path.required - the user id
  * @returns {Response.json} 200 - the user
  * @returns {Product.model}  404 - user do not exist
  */
@@ -111,7 +112,6 @@ router.get('/recipes', recipeController.recipes);
  * find all unser's recipes
  * @route GET /recipes/user
  * @group recipe
- * @param {number} id.path.required - the unser's recipes id
  * @returns {Response.json} 200 - the unser's recipes
  */
 router.get('/recipes/user', userController.usersRecipe);
