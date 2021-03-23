@@ -35,6 +35,7 @@ describe('user schema', function () {
         userSchemaTest.confirmPassword = "badpassword";
 
         const valid = userSchema.validate(userSchemaTest);
+        
         userSchemaTest.confirmPassword= "azo1Akdazo";
 
         expect(valid).to.have.property('error');

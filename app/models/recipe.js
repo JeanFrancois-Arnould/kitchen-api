@@ -3,43 +3,74 @@
  * @typedef Recipe
  * @model
  * @property {string} name.required.required - the name of the recipe
- * @property {string} prepare_time - time to prepare 00:00:00
- * @property {string} cooking_time - time to cook 00:00:00
+ * @property {string} prepareTime - time to prepare 00:00:00
+ * @property {string} cookingTime - time to cook 00:00:00
  * @property {string} image - url image of the recipe 
- * @property {number} part_number.required - number of parts
- * @property {string} part_type.required  - unit or per personne
+ * @property {number} partNumber.required - number of parts
+ * @property {string} partType.required  - unit or per personne
  * @property {boolean} share.required - public or private (true or false) 
- * @property {number} category_id.required - the category of the recipe
- * @property {number} user_id.required - the creator of the recipe
+ * @property {number} categoryId.required - the category of the recipe
+ * @property {number} userId.required - the creator of the recipe
  * @property {string} description - the description of the recipe
- * @property {number} difficulty_id.required - the difficulty of the recipe
- * @property {array.<label>} label.required -  the ingredients
- * @property {array.<mesure_unit>} mesure_unit.required -  the luser unit of the ingredients
- * @property {array.<allergy_id>} allergy_id.required -  the id of ingredient's allergy
+ * @property {number} difficultyId.required - the difficulty of the recipe
+ * @property {array.<ingredient>} ingredient.required -  the ingredients
+ * @property {array.<mesure_unit>} mesureUnit.required -  the luser unit of the ingredients
+ * @property {array.<allergy_id>} allergyieId.required -  the id of ingredient's allergy
  * @property {array.<quantity>} quantity.required -  the quantity of the ingredient
  * @property {array.<reviews>} reviews - the reviews of the recipe
  */
 class Recipe {
     id;
     name;
-    prepare_time;
-    cooking_time;
+    prepareTime;
+    cookingTime;
     image;
-    part_number;
-    part_type;
+    partNumber;
+    partType;
     share;
-    category_id;
-    user_id;
+    categoryId;
+    userId;
     description;
-    difficulty_id;
+    difficultyId;
     difficulty;
     ingredient;
-    ingredient_id;
-    mesure_unit;
+    ingredientId;
+    mesureUnit;
     quantity;
     allergie;
-    allergie_id;
+    allergyieId;
     reviews;
+
+    set prepare_time(val){
+        this.prepareTime = val;
+    };
+    set cooking_time(val){
+        this.cookingTime = val;
+    };
+    set part_number(val){
+        this.partNumber = val;
+    };
+    set part_type(val){
+        this.partType = val;
+    };
+    set category_id(val){
+        this.categoryId = val;
+    };
+    set user_id(val){
+        this.userId = val;
+    };
+    set difficulty_id(val){
+        this.difficultyId = val;
+    };
+    set ingredient_id(val){
+        this.ingredientId = val;
+    };
+    set mesure_unit(val){
+        this.mesureUnit = val;
+    };
+    set allergie_id(val){
+        this.allergyieId = val;
+    };
 
     constructor(data) {
         for (const prop in data) {

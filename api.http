@@ -13,11 +13,11 @@ POST {{baseUrl}}/signin
 Content-Type: application/json
 
 {
-    "email": "jesqdqgfp@gmail.fr",
+    "email": "eden17@live.be",
     "password": "pEaefsfs122zz",
     "confirmPassword": "pEaefsfs122zz",
-    "image": "/monImage.jpg",
-    "pseudo": "sdsdsfgsdgssd;uEaef22zz"
+    "image": "https://i.pinimg.com/originals/0c/36/5b/0c365bfa131d22653b40d6885e91ca91.png",
+    "pseudo": "femme fatale"
     
 }
 
@@ -26,7 +26,7 @@ POST {{baseUrl}}/login
 Content-Type: application/json
 
 {
-    "email": "jesqdqddsdp@gmail.fr",
+    "email": "eden17@live.be",
     "password": "pEaefsfs122zz"
 
 }
@@ -90,16 +90,16 @@ Content-Type: application/json
 }
 
 ### une recettes
-GET {{baseUrl}}/recipe/101
+GET {{baseUrl}}/recipe/25
 
 ### toutes les recettes
 GET {{baseUrl}}/recipes
 
-### all unser's recipes
+### all user's recipes
 GET {{baseUrl}}/recipes/user
 
 ### change status
-POST {{baseUrl}}/recipe/101/share
+POST {{baseUrl}}/recipe/25/share
 Content-Type: application/json
 
 {

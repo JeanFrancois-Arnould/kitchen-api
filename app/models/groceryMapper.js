@@ -1,4 +1,5 @@
 const db = require('../database');
+const Grocery  = require('../models/grocery');
 
 const groceryMapper = {
 
@@ -53,9 +54,11 @@ const groceryMapper = {
                     `;
                 const { rows } = await db.query(query, [id]);
                 const list = rows;
-                return list;
+                return new Grocery(list);
+                // return list;
             } else {
-                return list;
+                return new Grocery(list);
+                // return list;
             }
         } catch (err) {
             throw new Error(err.message);
